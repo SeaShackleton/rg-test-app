@@ -1,3 +1,6 @@
+## Build Dependencies 
+composer install 
+
 ## Run server
 php -S [ip address]:8000
 
