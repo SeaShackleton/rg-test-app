@@ -1,0 +1,66 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+	<!-- Position Column -->
+	<ng-container matColumnDef="id">
+		<th mat-header-cell *matHeaderCellDef> id </th>
+		<td mat-cell *matCellDef="let element"> {{element.id}} </td>
+	</ng-container>
+
+	<!-- Name Column -->
+	<ng-container matColumnDef="name">
+		<th mat-header-cell *matHeaderCellDef> Name </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.name}}" (change)="changeGreen($event, element.id, 1)" />
+		</td>
+	</ng-container>
+
+	<!-- Weight Column -->
+	<ng-container matColumnDef="state">
+		<th mat-header-cell *matHeaderCellDef> State </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.state}}" (change)="changeGreen($event, element.id, 2)" />
+		</td>
+	</ng-container>
+
+	<!-- Symbol Column -->
+	<ng-container matColumnDef="zip">
+		<th mat-header-cell *matHeaderCellDef> Zip </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.zip}}" (change)="changeGreen($event, element.id, 3)" />
+		</td>
+	</ng-container>
+
+	<!-- Symbol Column -->
+	<ng-container matColumnDef="amount">
+		<th mat-header-cell *matHeaderCellDef> Amount </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.amount}}" (change)="changeGreen($event, element.id, 4)" />
+		</td>
+	</ng-container>
+	
+	<!-- Symbol Column -->
+	<ng-container matColumnDef="qty">
+		<th mat-header-cell *matHeaderCellDef> qty </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.qty}}" (change)="changeGreen($event, element.id, 5)" />
+		</td>
+	</ng-container>
+	
+	<!-- Symbol Column -->
+	<ng-container matColumnDef="item">
+		<th mat-header-cell *matHeaderCellDef> Item </th>
+		<td mat-cell *matCellDef="let element">
+			<input type="text" value="{{element.item}}" (change)="changeGreen($event, element.id, 6)" />
+		</td>
+	</ng-container>
+	
+	<!-- Symbol Column -->
+	<ng-container matColumnDef="controlColmn">
+		<th mat-header-cell *matHeaderCellDef>  </th>
+		<td mat-cell *matCellDef="let element"> <button (click)="deleteGreen( element.id )"><a title="delete">X</a></button> </td>
+	</ng-container>
+
+	<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+	<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+	
+</table>
+<app-child-form (addGreen)="addGreen($event)"></app-child-form>

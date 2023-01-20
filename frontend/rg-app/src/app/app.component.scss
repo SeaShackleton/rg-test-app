@@ -1,0 +1,43 @@
+ 
+
+
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+.mtb1 {
+	margin:0.5em 0px;
+	width: 100%;
+	padding: 0.4em;
+}
+input[type=submit] {
+	margin-top:1.5em;
+	cursor:pointer;
+}
+#newuser {
+	display: none;
+}
+#wordcontainer {
+	text-align: center;
+}
+.leaderboardRow {
+	width: 100%;
+	display: block;
+	padding: 3px 0px;
+	position:relative;
+}
+.score {
+	float: right;  
+}
+.singleLetter{
+	border-bottom: 1px solid #fff;
+	height: 2em;
+	width: 2em;
+	display: inline-block;
+	margin: 0px 2px;
+}
+.errorRow {
+	width:100%;
+	display:block;
+	float:left;
+}

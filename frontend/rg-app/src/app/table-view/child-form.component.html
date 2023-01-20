@@ -1,0 +1,10 @@
+<h4>add new:</h4>
+<form [formGroup]="newGreenForm" (ngSubmit)="onSubmit()">
+	<input type="text" formControlName="name" placeholder="name" />
+	<input type="text" formControlName="state" placeholder="state" />
+	<input type="text" formControlName="zip" placeholder="zip" />
+	<input type="text" formControlName="amount" placeholder="amount" />
+	<input type="text" formControlName="qty" placeholder="qty" />
+	<input type="text" formControlName="item" placeholder="item" />
+	<input type="submit" value="add new" />
+</form>

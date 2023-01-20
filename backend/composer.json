@@ -1,0 +1,17 @@
+{
+    "description": "Backend code challenge for Radian Generation",
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-phpbrowser": "*",
+        "codeception/module-asserts": "*",
+        "codeception/module-rest": "^3.3"
+    }
+}
