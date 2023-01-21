@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Build Dependencies 
 npm install 
 
+## Define Environment 
+ *Make sure to update the apiUrl in src/environments/environment.ts
+
+
 ## Development server
 ng serve --host [I.P. Address] --port 4200
 
