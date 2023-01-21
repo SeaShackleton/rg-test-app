@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 npm install 
 
 ## Define Environment 
- *Make sure to update the apiUrl in src/environments/environment.ts
+ *Make sure to update the apiUrl in "src/environments/environment.ts" to the proper IP address where the API is running
 
 
 ## Development server
