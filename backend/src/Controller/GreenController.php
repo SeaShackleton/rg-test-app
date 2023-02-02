@@ -45,7 +45,6 @@ class GreenController {
 				}
                 break;
             default:
-				print "fuck";
 				print_r($this->requestMethod);
                 $response = $this->notFoundResponse();
                 break;
