@@ -8,8 +8,8 @@ import { environment } from './../environments/environment';
 })
 export class HttpService {
 
-  //apiUrl = environment.apiUrl+":8000/green";
-  apiUrl = "http://192.168.0.246:8000";
+  apiUrl = environment.apiUrl+":8000";
+  
   constructor(private httpClient: HttpClient) { }
   
    sendGetRequest(path: string) {
